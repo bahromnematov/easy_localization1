@@ -13,7 +13,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Localizations"),
+        title: Text("text2".tr()),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
           Container(
             padding: EdgeInsets.all(12),
             child: Text(
-                "text".tr(),
+              "text".tr(),
               style: TextStyle(fontSize: 20),
             ),
           ),
@@ -34,10 +34,10 @@ class _HomePageState extends State<HomePage> {
                 child: MaterialButton(
                   color: Colors.blue,
                   onPressed: () {
-                    context.setLocale(Locale('uz', 'UZ'));
+                    context.setLocale(Locale('en', 'US'));
                   },
                   child: Text(
-                    "Uzbek",
+                    "English",
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
@@ -49,10 +49,10 @@ class _HomePageState extends State<HomePage> {
                 child: MaterialButton(
                   color: Colors.green,
                   onPressed: () {
-                    context.setLocale(Locale('ru', 'RU'));
+                    context.setLocale(Locale('ja', 'JP'));
                   },
                   child: Text(
-                    "Russia",
+                    "Yapon",
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
@@ -64,10 +64,10 @@ class _HomePageState extends State<HomePage> {
                 child: MaterialButton(
                   color: Colors.red,
                   onPressed: () {
-                    context.setLocale(Locale('en', 'US'));
+                    context.setLocale(Locale('ko', 'KR'));
                   },
                   child: Text(
-                    "English",
+                    "Korea",
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
